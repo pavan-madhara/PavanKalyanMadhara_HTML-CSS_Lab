@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Menu Bar</title>
+
+    <style >
+        body {
+            margin: 0;
+            font-size: 10px;
+        }
+
+        .header_wrapper {
+            background-color: red;
+            margin: 0;
+        }
+
+        .header_title {
+            text-align: center;
+            margin: 0;
+            font-size: 1.8rem;
+            padding: 1.3rem 0;
+        }
+
+        .nav_bar {
+            height: 2.6rem;
+            color: grey;
+            padding-left: 3rem;
+        }
+
+        .nav_bar_link {
+            display: inline-block;
+            background-color: white;
+            color: black;
+            font-size: 1rem;
+            padding: 0.6rem;
+        }
+
+        .nav_bar_link:hover {
+            background-color: grey;
+            cursor: pointer;
+        }
+
+        .dropdown {
+            display: none;
+            position: absolute;
+            padding-top: 0.7rem;
+        }
+
+        .drop_down_link {
+            text-decoration: none;
+            display: block;
+            padding: 10px 10px;
+            background-color: #e1e7d2;
+            color: rgb(121, 141, 182);
+            font-weight: 500;
+        }
+
+        .nav_bar_link:hover .dropdown {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    
+        <div class="header_wrapper">
+            <h2 class="header_title">Demo of Dropdown</h2>
+        </div>
+
+        <nav class=""nav_bar>
+            <div class="nav_bar_link">
+                Link 1
+            </div>
+            <div class="nav_bar_link">
+                Link 2
+                <div class="dropdown">
+                    <a class="drop_down_link" href="#">DD_link_1</a>
+                    <a class="drop_down_link" href="#">DD_link_2</a>
+                    <a class="drop_down_link" href="#">DD_link_3</a>
+                    
+                </div>
+            </div>
+            <div class="nav_bar_link">
+                Link 3
+                <div class="dropdown">
+                    <a class="drop_down_link" href="#">DD_link_1</a>
+                    <a class="drop_down_link" href="#">DD_link_2</a>
+                    <a class="drop_down_link" href="#">DD_link_3</a>
+                    
+                </div>
+            </div>
+        </nav>
+</body>
+</html>
+

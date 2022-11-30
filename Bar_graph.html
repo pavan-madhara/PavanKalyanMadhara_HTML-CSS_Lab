@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bar-Graph Animation</title>
+
+    <style>
+        body {
+            margin: 0;
+            /*background-color: black;*/
+        }
+
+        #bar_wrapper {
+            background-color: rgb(232, 233, 232);
+            /*width: 150px;
+            height: 300px;*/
+            position: absolute;
+            left: 40%;
+            top: 20%;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .bar {
+            display: inline-block;
+            width: 80px;
+            height: 250px;
+            padding: 6px;
+            /*margin: 8px; */
+            /* background-color: rgb(255, 255, 255); */
+            /* margin: 20px; */
+        }
+        
+        div {
+            background-color: rgb(230, 87, 87);
+            width: 40px;
+            height: 300px;
+            margin: 20px;
+        }
+
+        .bar_1 {
+            width: 100%;
+            height: 70%;
+            background-color: white;
+            animation-name: bar_ani_1;
+            animation-duration: 2s;
+            animation-iteration-count: 1;
+        }
+
+        @keyframes bar_ani_1 {
+            0% {
+                height: 100%;
+                background-color: white;
+            }
+
+            100% {
+                height: 70%;
+                background-color: white;
+            }
+        }
+
+        .bar_2 {
+            background-color: white;
+            width: 100%;
+            height: 60%;
+            animation-name: bar_ani_2;
+            animation-duration: 2s;
+            animation-iteration-count: 1;
+        }
+
+        @keyframes bar_ani_2 {
+            0% {
+                height: 100%;
+                background-color: white;
+            }
+
+            100% {
+                height: 60%;
+                background-color: white;
+            }
+        }
+
+        .bar_3 {
+            background-color: white;
+            width: 100%;
+            height: 20%;
+            animation-name: bar_ani_3;
+            animation-duration: 4s;
+            animation-iteration-count: 1;
+        }
+
+        @keyframes bar_ani_3 {
+            0% {
+                height: 100%;
+                background-color: white;
+            }
+
+            100% {
+                height: 20%;
+                background-color: white;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <section id="bar_wrapper">
+
+        <article class="bar">
+            <div>
+                <article class="bar_1"></article>
+            </div>
+            <p style="text-align: center;"> 30% </p>
+        </article>
+        <article class="bar">
+            <div>
+                <article class="bar_2"></article>
+            </div>
+            <p style="text-align: center;"> 40% </p>
+        </article>
+        <article class="bar">
+            <div>
+                <article class="bar_3"></article>
+            </div>
+            <p style="text-align: center;"> 80% </p>
+        </article>
+        <h1 style="text-align: center;"> Bar Plot </h1>
+    </section>
+</body>
+</html>
